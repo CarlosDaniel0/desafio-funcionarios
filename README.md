@@ -59,4 +59,4 @@ Acesse: http://localhost:3001
 - [x] [Nest.js](https://nestjs.com/)
 - [x] [Tailwindcss](https://tailwindcss.com/)
 - [x] [TypeORM](https://typeorm.io/#/)
-- []
+- [x] [Swagger](https://swagger.io/)
