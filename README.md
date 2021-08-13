@@ -17,9 +17,20 @@ Para utilizar esse projeto em sua máquina é necessário ter instalado [Node.JS
 
 - Variáveis de Ambiente do Banco de Dados
 
-  - Dentro de /backend
+  - Abra o painel do seu SGBD e crie um novo banco de dados
+  - Acesse a pasta backend
   - Renomeie o arquivo .env-example para .env
-  - Adicione as variáveis relacionadas ao Banco de Dados
+  - configure as variáveis de ambiente com as informações seguintes:
+
+  | Variáveis | Dados     |
+  | --------- | --------- |
+  | HOST      | localhost |
+  | PORT      | 3306      |
+  | USERNAME  | user      |
+  | PASSWORD  | senha     |
+  | DATABASE  | banco     |
+
+  -- Porta default MySQL 3306
 
 - Rodando o Projeto
 
@@ -35,11 +46,13 @@ Acesse: http://localhost:3000
 
 ### Frontend
 
-- Variável de Ambiete de url da API
+- Variável de Ambiente de url da API
 
   - Dentro de /frontend
   - Renomeie o arquivo .env.local-example para .env.local
   - Adicione a URL da API
+
+  -- Padrão da URL de api é http://localhost:3000
 
 - Rodando o projeto
 
