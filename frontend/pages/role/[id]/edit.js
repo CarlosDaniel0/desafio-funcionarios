@@ -94,9 +94,14 @@ const EditRole = ({ role }) => {
 }
 
 export async function getServerSideProps(context) {
-  const role = await fetch(
-    process.env.NEXT_PUBLIC_API + '/role/' + context.params.id
-  ).then(res => res.json())
+  let role = {}
+  try {
+    role = await fetch(
+      process.env.NEXT_PUBLIC_API + '/role/' + context.params.id
+    ).then(res => res.json())
+  } catch (err) {
+    console.log('Erro ao requisitar a API')
+  }
   return {
     props: {
       role

@@ -63,12 +63,19 @@ const Index = ({ employees, roles }) => {
 }
 
 export async function getServerSideProps(context) {
-  const employees = await fetch(
-    process.env.NEXT_PUBLIC_API + '/employee/count'
-  ).then(res => res.json())
-  const roles = await fetch(process.env.NEXT_PUBLIC_API + '/role/count').then(
-    res => res.json()
-  )
+  let employees = []
+  let roles = []
+  try {
+    employees = await fetch(
+      process.env.NEXT_PUBLIC_API + '/employee/count'
+    ).then(res => res.json())
+    roles = await fetch(process.env.NEXT_PUBLIC_API + '/role/count').then(res =>
+      res.json()
+    )
+  } catch (err) {
+    console.log('Erro ao requisitar a API')
+  }
+
   return {
     props: {
       employees,
