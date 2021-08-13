@@ -11,12 +11,8 @@ import { EmployeeModule } from './modules/employee/employee.module'
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: async (configService: ConfigService) => ({
-        type: 'mysql',
-        host: `${configService.get('HOST')}`,
-        port: configService.get('PORT'),
-        username: configService.get('USERNAME'),
-        password: `${configService.get('PASSWORD')}`,
-        database: `${configService.get('DATABASE')}`,
+        type: 'postgres',
+        url: configService.get('DATABASE_URL'),
         synchronize: true,
         autoLoadEntities: true
         // logging: true

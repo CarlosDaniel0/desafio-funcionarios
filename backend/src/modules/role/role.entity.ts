@@ -25,7 +25,7 @@ export class Role {
   @Min(1100, {
     message: 'Valor abaixo do salário mínimo!'
   })
-  @Column({ type: 'double' })
+  @Column({ type: 'float' })
   wage: number
 
   // Descrição (Ex: Atua na área de escritório)
