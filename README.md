@@ -20,15 +20,15 @@ Para utilizar esse projeto em sua máquina é necessário ter instalado [Node.JS
   - Renomeie o arquivo `.env-example` para `.env`
   - configure as variáveis de ambiente com as informações seguintes:
 
-  | Variáveis | Dados     |
-  | --------- | --------- |
-  | HOST      | localhost |
-  | PORT      | 3306      |
-  | USERNAME  | user      |
-  | PASSWORD  | senha     |
-  | DATABASE  | banco     |
+    | Variáveis | Dados     |
+    | --------- | --------- |
+    | HOST      | localhost |
+    | PORT      | 3306      |
+    | USERNAME  | user      |
+    | PASSWORD  | senha     |
+    | DATABASE  | banco     |
 
-  -- Porta default MySQL 3306
+    > Porta default MySQL 3306
 
 - Rodando o Projeto em Modo de desenvolvimento
 
