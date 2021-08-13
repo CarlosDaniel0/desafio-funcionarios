@@ -4,8 +4,6 @@
 
 Para utilizar esse projeto em sua máquina é necessário ter instalado [Node.JS](https://nodejs.org/en/) e o Banco de dados Relacional [MySQL](https://www.mysql.com/)
 
-## Acesso Online
-
 ## Imagens
 
 ![Frontend](img/frontend.png)
@@ -32,7 +30,7 @@ Para utilizar esse projeto em sua máquina é necessário ter instalado [Node.JS
 
   -- Porta default MySQL 3306
 
-- Rodando o Projeto
+- Rodando o Projeto em Modo de desenvolvimento
 
 ```bash
 $ cd backend
@@ -73,3 +71,7 @@ Acesse: http://localhost:3001
 - [x] [Tailwindcss](https://tailwindcss.com/)
 - [x] [TypeORM](https://typeorm.io/#/)
 - [x] [Swagger](https://swagger.io/)
+
+## Informações
+
+Caso tenha algum problema na execução do projeto, pode entrar em contato para qualquer informação.
